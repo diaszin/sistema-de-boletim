@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrador de Notas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./codigo.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form id="form-criar">
+        <input type="text" id="nome" placeholder="Nome Do Aluno" required tabindex="-2">
+        <input type="number" id="nota" placeholder="Nota Do Aluno" required max="10" min="0">
+        <input type="text" id="materia"placeholder="Matéria" required>
+        <select name="unidade" id="unidade" form="form-criar">
+            <option value="unidade1">Unidade I</option>
+            <option value="unidade2">Unidade II</option>
+            <option value="unidade3">Unidade III</option>
+            <option value="unidade4">Unidade IV</option>
+            <option value="recuperação">Recuperação</option>
+        </select>
+        <input type="reset" value="Clear All">
+        <input type="submit" value="Enviar" id="enviar" required>
+    </form>
+    <br>
+    <table>
+        <tbody id="lista">
+        
+        <tr>
+            <th>Nome do Aluno</th>
+            <th>Nota do Aluno</th>
+            <th>Matéria</th>
+            <th>Unidade</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>1</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+          <td>1</td>
+        </tr>
+        </tbody>
+      </table>
+    </body>
+</html>
