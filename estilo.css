@@ -20,5 +20,5 @@ form>input, select{
 }
 
 form>input:focus{
-    background-color: gray;
+    border-color: gray;
 }
