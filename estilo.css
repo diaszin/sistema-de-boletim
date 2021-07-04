@@ -18,3 +18,7 @@ form>input, select{
     outline: none;
 
 }
+
+form>input:focus{
+    background-color: gray;
+}
