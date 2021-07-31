@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrador de Notas</title>
+    <!-- <script src="./notifcation.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Css/estilo.css">
+    <!-- Icones SVG -->
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <form id="form-criar">
+        <input type="text" id="nome" placeholder="Nome Do Aluno" required tabindex="-2">
+        <input type="number" id="nota" placeholder="Nota Do Aluno" required max="10" min="0">
+        <input type="text" id="materia"placeholder="Matéria" required>
+        <select name="unidade" id="unidade" form="form-criar">
+            <option value="unidade1">Unidade I</option>
+            <option value="unidade2">Unidade II</option>
+            <option value="unidade3">Unidade III</option>
+            <option value="unidade4">Unidade IV</option>
+            <option value="recuperação">Recuperação</option>
+        </select>
+        <span>
+            
+            <input type="checkbox" name="importante" id="importante" >
+            <label for="importante">Importante</label>
+        </span>
+        <input type="reset" value="Limpar Área">
+        <input type="submit" value="Cadastrar" id="cadastrar" required>
+        <button id="logout" style="margin-left: 70px; background-color: red; border-radius: 8px; padding-inline: 8px; font-weight: 800;">
+            <i class="bi bi-box-arrow-right">Logout</i>
+        </button>
+    </form>
+    <!-- Formulário de Pesquisa -->
+    <div id="form-pesquisa">
+        <link rel="stylesheet" href="Css/pesquisa.css">
+        <script src="Js/pesquisar.js"></script>
+        <label for="pesquisar"><i class="bi bi-search"></i></label>
+        <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar Aluno..." onkeyup="myFunction()">
+        <b id="qtdAluno"></b>
+    </div>
+    <br>
+    <div id="tabela-lista-div">
+        <table>
+            <tbody id="lista">
+            <tr>
+                <th>Nome do Aluno</th>
+                <th>Nota do Aluno</th>
+                <th>Matéria</th>
+                <th>Unidade</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div style="text-align: center; margin-block: 100px;">
+        <div align="center">
+            <a href="./instruções.html"><p style="margin-bottom: 0.4cm; line-height: 0.5cm"><input type="button" name="Voltar para o sistema" value="Documentação"  style="width: 6.91cm; height: 1.62cm"></p></a>
+        </div>
+    </div>
+    <!-- Código do Nosso App -->
+    <script src="Js/codigo.js" defer></script>
+    </body>
+    </html>
