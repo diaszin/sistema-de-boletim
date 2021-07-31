@@ -1,0 +1,13 @@
+div#form-pesquisa{
+    text-align: center;
+    padding-block: 30px;
+}
+
+input#pesquisar{
+    border-radius: 8px;
+    padding-inline: 8px;
+    size: 15px;
+    /* padding-block: 10px; */
+    font-size: 20px;
+    outline: none;
+}
